@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Neuropol";
+    src: url("../fonts/neuropol.ttf");
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(45deg, #000000 1%,#75aad6 49%,#030159 100%);
+    background-attachment: fixed
+}
+
+.wrapper {
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+header h1 {
+    font: 55px Neuropol;
+    margin: 10px 0px;
+}
+
+h2,
+h3,
+h4 {
+    font: 45px Neuropol;
+    margin: 30px 0px 20px 0px;
+}
+
+main {
+    text-align: center;
+}
+
+.description {
+    margin: auto;
+    font: 20px Neuropol;
+}
+
+.controls {
+    width: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  repeat(10, auto);
+    grid-template-areas: "header header"
+                         "move move"
+                         "move-descr move-descr"
+                         "move-pic1 move-pic2"
+                         "aim aim"
+                         "aim-descr aim-descr"
+                         "mouse-move-pic mouse-move-pic"
+                         "shooting shooting"
+                         "shooting-descr shooting-descr"
+                         "shooting-pic shooting-pic";
+    justify-items: center;
+}
+
+.controls span {
+    font: 35px Neuropol;
+    margin: 40px 0px 20px 0px;
+}
+
+h4 {
+    grid-area: header;
+}
+
+span.movement {
+    grid-area: move;
+}
+
+.movement.description {
+    grid-area: move-descr;
+    margin-bottom: 15px;
+}
+
+[alt="wasd"] {
+    grid-area: move-pic1;
+}
+
+[alt="arrows"] {
+    grid-area: move-pic2;
+}
+
+span.aiming {
+    grid-area: aim;
+}
+
+.aiming.description {
+    grid-area: aim-descr;
+    margin-bottom: 15px;
+}
+
+[alt="mouse move"] {
+    grid-area: mouse-move-pic;
+}
+
+span.shooting {
+    grid-area: shooting;
+}
+
+.shooting.description {
+    grid-area: shooting-descr;
+    margin-bottom: 15px;
+}
+
+[alt="fire"] {
+    grid-area: shooting-pic;
+}
+
+.presentation {
+    margin: 30px 0px 20px 0px;
+}
+
+.presentation a {
+    font: 35px Neuropol;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.footer {
+    margin: 10px 0px;
+}
+
+.footer a {
+    font: 25px Neuropol;
+    color: #000;
+}

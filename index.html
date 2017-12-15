@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Space Warrior</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <div class="header">
+                <h1>Space Warrior</h1>
+            </div>
+            <div class="start-game" id="start-game">
+                <span>Start game</span>
+            </div>
+            <div class="about" id="about">
+                <a href="./html/about.html">About</a>
+            </div>
+        </div>
+        <div class="health text">
+            <span>Health: </span>
+            <span id="health"></span>
+        </div>
+        <div class="shield text">
+            <span>Shield: </span>
+            <span id="shield"></span>
+        </div>
+        <div class="score text">
+            <span>Score: </span>
+            <span id="score"></span>
+        </div>
+        <div class="sheep-state text" id="sheep-state">
+            <ul id="sheep-speed">
+                <li>speed: </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul id="weapon-power">
+                <li>damage: </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul id="shoot-speed">
+                <li>shoot speed: </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul id="bullets-speed">
+                <li>bullets speed: </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="game-over" id="game-over">
+            <div class="header">
+                <span>GAME OVER</span>
+            </div>
+            <div class="leaders">
+                <p>Enter your name</p>
+                <span class="name-col">Player</span>
+                <span class="score-col">Score</span>
+                <input class="name" id="name" type="text" size="15" placeholder="name">
+                <div class="submit-name button" id="submit-name">Save score</div>
+            </div>
+            <div class="reset button" id="reset-button">
+                <span>Reset game</span>
+            </div>
+            <div class="about button" id="about">
+                <a href="./html/about.html">About</a>
+            </div>
+        </div>
+        <div class="pause" id="pause">
+            <div class="resume" id="resume">Resume</div>
+            <div class="reset" id="reset">Reset</div>
+        </div>
+    </div>
+    <script src="./js/bundle/game.bundle.js"></script>
+</body>
+</html>
